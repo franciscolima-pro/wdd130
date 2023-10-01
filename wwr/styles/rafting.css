@@ -37,6 +37,6 @@
     position: absolute;
   }
   
-  .hero img + p {
+   p {
     float: right;
-  }
+   }
