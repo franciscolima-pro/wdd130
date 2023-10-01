@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Inclusive+Sans&display=swap');
+:root {
+    --primary-color: #385580;
+    --secondary-color: #F4F4F5; 
+    --accent1-color: #db7006; 
+    --accent2-color: #0D825D;
+  
+    --heading-font: 'Croissant One', serif; 
+    --paragraph-font: 'Inclusive Sans', sans-serif; 
+}
+ h1, h2 {
+    font-family: 'Croissant One' sans-serif;
+    color: var(--accent2-color)
+ }
+  p {
+    font-family: 'Inclusive Sans', sans-serif;
+    color: var(--primary-color);
+  }
+  .social-links {
+    text-decoration: none;
+  }
