@@ -25,14 +25,14 @@
   
   .hero img {
     display: block;
-    width:0;
+    width:100%;
     height: auto;
   }
   
   .hero h1 {
-    position: absolute;
+    position: relative;
     }
   
   .hero article {
-    position: absolute;
+    position: relative;
   }
