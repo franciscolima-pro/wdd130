@@ -1,0 +1,22 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Class Selectors*/
+.box{
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid rgba (0,0,0,.1);
+    background-color: #2a76e8;
+    color: #033d2b;
+}
+main img {
+    /*float image to right*/
+    float: right;
+  }
+  aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
+  }
