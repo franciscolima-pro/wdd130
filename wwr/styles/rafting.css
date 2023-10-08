@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Inclusive+Sans&display=swap');
 :root {
-    --primary-color: #385580;
-    --secondary-color: #F4F4F5; 
+    --primary-color: #052d68;
+    --secondary-color: #1b1ba7; 
     --accent1-color: #db7006; 
-    --accent2-color: #0D825D;
+    --accent2-color: #f2ebea;
   
     --heading-font: 'Croissant One', serif; 
     --paragraph-font: 'Inclusive Sans', sans-serif; 
@@ -14,13 +14,15 @@
  }
   p {
     font-family: 'Inclusive Sans', sans-serif;
-    color: var(--primary-color);
+    color: var(--secondary-color);
   }
   .social-links {
     text-decoration: none;
   }
   .hero {
-    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
   }
   
   .hero img {
@@ -36,3 +38,34 @@
   .hero article {
     position: relative;
   }
+  .header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--accent2-color);
+    
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .nav a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(57, 49, 195);
+  }
+  .social-links {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .bordered {
+    border: 2px solid #02060c;
+    border-radius: 20px;
+  }
+.borderr {
+  border: 2px solid #02060c;
+  border-radius: 20px;
+}
+  
