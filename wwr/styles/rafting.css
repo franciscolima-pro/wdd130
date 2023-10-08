@@ -36,3 +36,11 @@
   .hero article {
     position: relative;
   }
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+.nav {
+  display: flex;
+}
