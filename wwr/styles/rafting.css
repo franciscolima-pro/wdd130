@@ -12,7 +12,7 @@
     font-family: 'Croissant One' sans-serif;
     color: var(--accent2-color)
  }
-  p {
+ p {
     font-family: 'Inclusive Sans', sans-serif;
     color: var(--secondary-color);
   }
@@ -117,6 +117,10 @@ textarea {
 
 input[type="submit"]:hover {
     background-color: #0056b3; 
+}
+p {
+  font-family: 'Inclusive Sans', sans-serif;
+  color: var(--secondary-color);
 }
 
   
