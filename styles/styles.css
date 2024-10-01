@@ -1,19 +1,25 @@
+:root{
+  --primary-color: steelblue;
+  --secondary-color: white;
+  --height-default: auto;
+}
+
 nav {
-  background-color: steelblue;
+  background-color: var(--primary-color);
   padding: 10px;
 }
 nav a {
-  color: white;
+  color: var(--secondary-color);
   display: block;
   padding: 20px;
 }
 h1 {
-  color: steelblue;
+  color: var(--primary-color);
 }
 img {
   width: 150px;
-  height: auto;
-  border: 1px solid steelblue;
+  height: var(--height-default);
+  border: 1px solid var(--primary-color);
   padding: 2px;
   box-shadow: 0 0 30px gray;
 }
@@ -31,17 +37,17 @@ aside{
   border: 5px double #aaa;
   padding: 1em;
   background-color: slategray;
-  color: whitesmoke;
+  color: var(--secondary-color);
   text-align: center;
 }
 
 aside img{
   width: 200px;
-  height: auto;
+  height: var(--height-default);
 }
 
 footer{
   margin-top: 5rem;
-  border-top: 1px solid steelblue;
+  border-top: 1px solid var(--primary-color);
   text-align: center;
 }
