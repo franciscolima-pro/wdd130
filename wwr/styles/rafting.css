@@ -57,6 +57,11 @@ header a{
     font-family: 'Permanent Marker';
 }
 
+header a:hover{
+    scale: 1.1;
+}
+
+
 header nav {
     display: flex;
     align-items: center;
@@ -68,7 +73,13 @@ header nav {
     display: block;
     width: 100%;
     height: auto;
+    
 }
+
+.employee:hover{
+    scale: 1.03;
+}
+
 
 .hero article{
     width: 80%;
@@ -81,8 +92,6 @@ header nav {
     margin: 5rem 0 5rem 0;
     padding: 2em;
 }
-
-
 
 .adventureimgs{
     display: flex;
@@ -98,6 +107,10 @@ header nav {
     margin-left: 60px;
     background: var(--primary-color);
 }
+.adventure img:hover{
+    scale: 1.03;
+}
+
 
 article p{
     color: white;
@@ -134,4 +147,8 @@ footer{
 footer a{
     text-decoration: none;
     margin: 0 1em;
+}
+
+footer img:hover{
+    scale: 1.1;
 }
