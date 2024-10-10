@@ -46,24 +46,31 @@ body{
     background: var(--primary-color);
 }
 
-header{
+header {
+    display: grid;
+    grid-template-columns: 1px 1fr ; /* ou use 'space-around' se quiser mais espaçamento */
     background-color: var(--primary-color);
     font-size: 1.2em;
+    align-items: center;
 }
 
 header a{
     text-decoration: none;
     color: white;
     font-family: 'Permanent Marker';
+    text-shadow: 1px 3px 1px black;
 }
 
-
+header img{
+    margin-left: 1em;
+    max-height: 100%; /* Para ajustar a altura da imagem ao header */
+}
 
 header nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    height: 3.7rem;
+    justify-content: space-evenly;
+    
 }
 
 .hero .heroimg{
@@ -74,7 +81,6 @@ header nav {
 }
 
 
-
 .hero article{
     width: 80%;
     right: 8rem;
@@ -83,25 +89,27 @@ header nav {
 }
 
 .adventure{
-    margin: 5rem 0 5rem 0;
-    padding: 2em;
+    display: flex;
+    /* margin: 5rem 0 5rem 0;
+    padding: 2em; */
 }
 
-.adventureimgs{
+.adventureimgs {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start; /* Alinha os itens no topo (ajuste se necessário) */
+    justify-content: space-around; /* Espaçamento entre os itens */
+    flex-wrap: nowrap; /* Garante que os itens não quebrem para outra linha */
+    gap: 20px; /* Adiciona espaçamento entre os itens */
 }
+   
 
 .adventure img{
     width: 13em;
     border: 2px solid var(--primary-color);
     border-radius: 0.3rem;
     padding: 0.15rem;
-    margin-left: 60px;
     background: var(--primary-color);
 }
-
 
 
 article p{
@@ -111,6 +119,7 @@ article p{
 h1{
     color: var(--primary-color);
     font-family: var(--primary-font);
+    text-shadow: 1px 3px 1px black;
 }
 
 h2{
@@ -118,22 +127,48 @@ h2{
     font-family: var(--primary-font);
     margin: 3rem;
     background: rgb(51, 255, 122, 0.3);
+    text-shadow: 1px 3px 1px black;
 }
 
 p{
     font-family: var(--secondary-font), sans-serif;
 }
 
+figcaption{
+    font-family: var(--secondary-font), sans-serif;
+}
+
+.history{
+    display: flex;
+    align-items: center;
+}
+
+.history img{
+    border: 2px solid var(--primary-color);
+    border-radius: 0.3rem;
+    padding: 0.15rem;
+    background: var(--primary-color);
+    margin: 1em;
+}
+
+
 .history p{
     width: 80%;
     text-align: center;
-    margin: 0 auto;
+    margin: 1em;
 }
 
 footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 5rem;
     background-color: rgb(0, 73, 36, 0.3);
     padding: 0.05em;
+}
+
+footer p{
+    margin-left: 40%;
 }
 
 footer a{
