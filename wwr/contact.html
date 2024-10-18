@@ -33,21 +33,22 @@
                 <h3>Send us a message</h3>
 
                 <label for="username" id="labelname">Name</label>
-                <input type="text" id="username">
+                <input type="text" name="username" id="username">
                 <label for="useremail" id="labelemail">E-mail</label>
-                <input type="email" id="useremail">
+                <input type="email" name="useremail" id="useremail">
                 
                 <h4>Message Subject</h4>
                 <label for="option1" >General Inquiry</label>
-                <input type="radio" value="General Inquiry" id="option1">
+                <input type="radio"  name="option1" value="General Inquiry" id="option1">
                 <label for="option2" >Reservation Question</label>
-                <input type="radio" value="Reservation Question" id="option2">
+                <input type="radio" name="option2" value="Reservation Question" id="option2">
                 <label for="option3" >Website Suggestion</label>
-                <input type="radio" value="Website Suggestion" id="option3">
+                <input type="radio" name="option3" value="Website Suggestion" id="option3">
                 
                 <label for="message" id="messagelabel">Message</label>
-                <textarea id="message"></textarea>
-                <button type="button">Send Message</button>
+                <textarea name="message" id="message"></textarea>
+                <p>Please subscribe me to the monthly newsletter<input type="checkbox"></p> 
+                <button type="submit">Send Message</button>
             </form>
         </section>
 
