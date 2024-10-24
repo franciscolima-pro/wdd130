@@ -126,8 +126,9 @@ h2{
     color: var(--primary-color);
     font-family: var(--primary-font);
     margin: 3rem;
-    background: rgb(51, 255, 122, 0.3);
+    background: rgb(51, 255, 122, 0.1);
     text-shadow: 1px 3px 1px black;
+    border-radius: 0.2em;
 }
 h3{
     font-family: var(--primary-font), sans-serif; 
@@ -147,7 +148,7 @@ figcaption{
 }
 
 .history img{
-    border: 2px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
     border-radius: 0.3rem;
     padding: 0.15rem;
     background: var(--primary-color);
@@ -190,7 +191,7 @@ footer a{
 
 .contact iframe, form{
     border-radius: 1em;
-    border: 5px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
     padding: 0.3em;
     width: 31em;
     height: 35em;
@@ -246,9 +247,9 @@ footer a{
 }
 
 .employees img{
-    border: 5px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
     padding: 0.3em;
-    background-color: rgb(0, 73, 36, 0.2);
+    border-radius: 0.5em;
 }
 
 .employees{
@@ -280,4 +281,111 @@ footer #wireframe{
     position: absolute;
     color: var(--primary-color);
     font-family: var(--primary-font);
+}
+
+/* Trips Styles */
+
+.trititle{
+    margin: 3rem;
+}
+
+.trip1, .trip2, .trip3{
+    border: 2rem;
+}
+
+.trip1, .trip3{
+    display: flex;
+    padding: 3em;
+    align-items: center;
+}
+
+.trip1 p, .trip3 p{
+    padding: 1em;
+}
+
+.trip1 img, .trip3 img{
+    padding: 1em;
+    border: 1px solid var(--primary-color);
+}
+
+.mainimg{
+    border: 1px solid var(--primary-color);
+}
+.trip2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    position: relative;
+    padding: 2em;
+}
+
+
+#mainimg  {
+    grid-column: 2; /* A imagem ocupa a segunda coluna */
+    justify-self: center; /* Centraliza a imagem na coluna */
+    border: 1px solid black;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+.stickers {
+    grid-column: 3; 
+    display: flex; /* Usa flexbox para alinhar os adesivos */
+    justify-content: space-evenly; /* Espaça igualmente os adesivos */
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.stickers img{
+    border-radius: 30rem;
+    width: 4em;
+}
+
+.table-trips{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-trips img{
+    align-self: center;
+    justify-self: center;
+}
+
+table th{
+    background-color: rgb(51, 255, 122, 0.1);
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+}
+
+table td{
+    background-color: rgb(51, 255, 122, 0.1);
+    font-family: var(--secondary-font);
+}
+
+#calltoaction{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    position: relative;
+    padding: 2em;
+
+}
+
+#calltoaction div{ 
+    grid-column: 1; 
+    display: flex; /* Usa flexbox para alinhar os adesivos */
+    justify-content: center; /* Espaça igualmente os adesivos */
+    align-items: center;
+    position: absolute;
+    bottom: 2.6em;
+    width: 100%;
+}
+
+#calltoaction div h3{ 
+  color: #CF4D26;
+  text-shadow: 1px 2px 1px black;
 }
