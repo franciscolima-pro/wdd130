@@ -22,8 +22,8 @@ body{
 }
 
 .hero h1{
-    bottom: 30rem;
-    margin-left: 50rem;
+    bottom: 20rem;
+    margin-left: 38rem;
     color: white;
 }
 .hero article{
@@ -124,7 +124,6 @@ h2{
 }
 h3{
     font-family: var(--primary-font), sans-serif; 
-    color: var(--primary-color);
 }
 
 p{
@@ -393,8 +392,8 @@ height: auto;
 
 #herodiv h1{
     position: absolute;
-    bottom: 48rem;
-    margin-left: 50rem;
+    bottom: 33rem;
+    margin-left: 37rem;
     color: white;
 }
 
@@ -440,7 +439,10 @@ font-family: var(--secondary-font), sans-serif;
     margin-right: 45%;
 }
 
-.formindex #useremail, #username{
+#mainsection h3{
+    color: var(--primary-color);
+}
+.formindex #useremailindex, #usernameindex{
     border-radius: 0.5em;
     width: 50%;
     padding: 0.7em;
