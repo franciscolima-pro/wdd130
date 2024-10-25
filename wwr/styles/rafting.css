@@ -22,8 +22,8 @@ body{
 }
 
 .hero h1{
-    bottom: 18rem;
-    margin-left: 40rem;
+    bottom: 30rem;
+    margin-left: 50rem;
     color: white;
 }
 .hero article{
@@ -43,7 +43,6 @@ body{
     border: 1px solid var(--primary-color);
     border-radius: 0.3em;
     padding: 0.15rem;
-    background: var(--primary-color);
 }
 
 header {
@@ -76,8 +75,7 @@ header nav {
 .hero .heroimg{
     display: block;
     width: 100%;
-    height: auto;
-    
+    height: auto;   
 }
 
 
@@ -90,25 +88,19 @@ header nav {
 
 .adventure{
     display: flex;
-    /* margin: 5rem 0 5rem 0;
-    padding: 2em; */
-}
-
-.adventureimgs {
     display: flex;
-    align-items: flex-start; /* Alinha os itens no topo (ajuste se necessário) */
-    justify-content: space-around; /* Espaçamento entre os itens */
-    flex-wrap: nowrap; /* Garante que os itens não quebrem para outra linha */
-    gap: 20px; /* Adiciona espaçamento entre os itens */
+    align-items: center;
+    justify-content: space-evenly; 
+    flex-wrap: nowrap; 
+    gap: 20px;
 }
-   
+ 
 
 .adventure img{
     width: 13em;
-    border: 2px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
     border-radius: 0.3rem;
     padding: 0.15rem;
-    background: var(--primary-color);
 }
 
 
@@ -132,6 +124,7 @@ h2{
 }
 h3{
     font-family: var(--primary-font), sans-serif; 
+    color: var(--primary-color);
 }
 
 p{
@@ -151,7 +144,7 @@ figcaption{
     border: 1px solid var(--primary-color);
     border-radius: 0.3rem;
     padding: 0.15rem;
-    background: var(--primary-color);
+
     margin: 1em;
 }
 
@@ -189,7 +182,7 @@ footer a{
     padding: 3rem;
 }
 
-.contact iframe, form{
+.contact iframe, .formcontact{
     border-radius: 1em;
     border: 1px solid var(--primary-color);
     padding: 0.3em;
@@ -201,25 +194,25 @@ footer a{
     background-color: rgb(0, 73, 36, 0.2);
 }
 
-.contact form{
+.contact .formcontact{
     background-color: rgb(0, 73, 36, 0.2);
     padding: 1em;
 }
 
-.contact form #labelname, #labelemail, #messagelabel{
+.contact .formcontact #labelname, #labelemail, #messagelabel{
     display: block;
     margin-right: 70%;
     margin-top: 1em;
 }
 
-.contact form #useremail, #username, #message{
+.contact .formcontact #useremail, #username, #message{
     border-radius: 0.5em;
     width: 80%;
     padding: 0.7em;
     margin: 1em;
 }
 
-.contact form #message{
+.contact .formcontact #message{
     border-radius: 0.5em;
     width: 80%;
     height: 17%;
@@ -227,17 +220,17 @@ footer a{
     margin: 1em;
 }
 
-.contact form label{
+.contact .formcontact label{
     font-family: var(--secondary-font), sans-serif;
 }
 
-.contact form h4{
+.contact .formcontact h4{
     font-family: var(--secondary-font), sans-serif;
     margin: 0.2em;
     font-weight: normal;
 }
 
-.contact form button{
+.contact .formcontact button{
     border-radius: 0.5em;
     width: 30%;
     padding: 0.5em;
@@ -388,4 +381,74 @@ table td{
 #calltoaction div h3{ 
   color: #CF4D26;
   text-shadow: 1px 2px 1px black;
+}
+
+/* Index Styles */
+
+#herodiv img{
+display: block;
+width: 100%;
+height: auto; 
+}
+
+#herodiv h1{
+    position: absolute;
+    bottom: 48rem;
+    margin-left: 50rem;
+    color: white;
+}
+
+#mainsection{
+    padding: 4em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.herodivimg{
+    padding: 1em;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.4em;
+}
+
+.formindex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    padding: 1em;
+    width: 50%;
+    color: white;
+}
+
+.formindex button{
+border-radius: 0.5em;
+width: 30%;
+padding: 0.5em;
+background: #CB5127;
+border: none;
+color: white;
+font-family: var(--secondary-font), sans-serif;
+}
+
+.formindex label{
+    display: block;
+    font-family: var(--secondary-font), sans-serif;
+    margin-right: 45%;
+}
+
+.formindex #useremail, #username{
+    border-radius: 0.5em;
+    width: 50%;
+    padding: 0.7em;
+    margin: 1em;
+}
+
+#formhome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
